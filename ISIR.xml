@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblio SYSTEM "ISIR.dtd" >
+
+<biblio>
+    <etudiant N_insc="12345">
+        <nom>Dupont</nom>
+        <prenom>Jean</prenom>
+        <Sex gender="homme"/>
+        <telephones>
+            <tele type="GSM">123456789</tele>
+            <tele type="FIXE">987654321</tele>
+        </telephones>
+        <emails>
+            <email type="personnel">jean.dupont@example.com</email>
+            <email type="academique">j.dupont@universite.fr</email>
+        </emails>
+        <date>
+            <jour>01</jour>
+            <mois>01</mois>
+            <annee>1990</annee>
+        </date>
+        <adresses>
+            <adresse>
+                <rue>Rue de la Liberté</rue>
+                <numero>123</numero>
+                <ville>Paris</ville>
+            </adresse>
+            <adresse>
+                <rue>Avenue des Champs-Élysées</rue>
+                <numero>456</numero>
+                <ville>Paris</ville>
+            </adresse>
+        </adresses>
+        <photo source="chemin/vers/photo.jpg" format="jpg"/>
+    </etudiant>
+    <etudiant N_insc="123456">
+        <nom>Dupont</nom>
+        <prenom>Jean</prenom>
+        <Sex gender="homme"/>
+        <telephones>
+            <tele type="GSM">123456789</tele>
+            <tele type="FIXE">987654321</tele>
+        </telephones>
+        <emails>
+            <email type="personnel">jean.dupont@example.com</email>
+            <email type="academique">j.dupont@universite.fr</email>
+        </emails>
+        <date>
+            <jour>01</jour>
+            <mois>01</mois>
+            <annee>1990</annee>
+        </date>
+        <adresses>
+            <adresse>
+                <rue>Rue de la Liberté</rue>
+                <numero>123</numero>
+                <ville>Paris</ville>
+            </adresse>
+            <adresse>
+                <rue>Avenue des Champs-Élysées</rue>
+                <numero>456</numero>
+                <ville>Paris</ville>
+            </adresse>
+        </adresses>
+        <photo source="chemin/vers/photo.jpg" format="jpg"/>
+    </etudiant>
+</biblio>

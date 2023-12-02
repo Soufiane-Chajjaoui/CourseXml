@@ -1,0 +1,15 @@
+<!ELEMENT region (Vile+)>
+<!ELEMENT Vile (nom,nb_habitants,climat,Coordonnee,Logo*)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT superficie (#PCDATA)>
+<!ELEMENT nb_habitants (#PCDATA)>
+<!ELEMENT climat EMPTY>
+<!ELEMENT Coordonnee (#PCDATA|Lat|Long)*>
+<!ELEMENT Lat (#PCDATA)>
+<!ELEMENT Long (#PCDATA)>
+<!ELEMENT Logo EMPTY>
+<!ATTLIST climat type (tempere|humide|chaud|sec) "sec">
+<!ATTLIST Vile type (capitale|Chef_lieu|imitrophe)>
+<!ATTLIST Vile code ID #REQUIRED>
+<!ATTLIST Logo source CDATA #REQUIRED>
+<!ATTLIST Logo format #FIXED "png">

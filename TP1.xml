@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pays [
+  <!ELEMENT pays (region+)>
+  <!ELEMENT region (Vile+)>
+  <!ELEMENT Vile (nom, nb_habitants, climat, Coordonnee, Logo*)>
+  <!ELEMENT nom (#PCDATA)>
+  <!ELEMENT superficie (#PCDATA)>
+  <!ELEMENT nb_habitants (#PCDATA)>
+  <!ELEMENT climat EMPTY>
+  <!ELEMENT Coordonnee (Lat, Long)>
+  <!ELEMENT Lat (#PCDATA)>
+  <!ELEMENT Long (#PCDATA)>
+  <!ELEMENT Logo EMPTY>
+  <!ATTLIST climat type (tempere|humide|chaud|sec) "sec">
+  <!ATTLIST Vile code ID #REQUIRED>
+  <!ATTLIST Logo source CDATA #REQUIRED>
+  <!ATTLIST Logo format (jpg | png) "png">
+    <!ATTLIST Vile Limit  IDREFS #REQUIRED>
+    <!ATTLIST pays capitale IDREF #REQUIRED>
+]>
+<pays capitale="ID001">
+<region>
+  <Vile code="ID001" Limit="ID001 ID002">
+    <nom>City1</nom>
+    <nb_habitants>1000000</nb_habitants>
+    <climat type="tempere"/>
+    <Coordonnee>
+      <Lat>40.7128</Lat>
+      <Long>-74.0060</Long>
+    </Coordonnee>
+    <Logo source="logo1_png" format="png"/>
+  </Vile>
+    <Vile code="ID002" Limit="ID001">
+    <nom>City1</nom>
+    <nb_habitants>1000000</nb_habitants>
+    <climat type="tempere"/>
+    <Coordonnee>
+      <Lat>40.7128</Lat>
+      <Long>-74.0060</Long>
+    </Coordonnee>
+    <Logo source="logo1_png" format="png"/>
+  </Vile>
+</region>
+</pays>
+

@@ -1,0 +1,29 @@
+<!ELEMENT biblio (etudiant*)>
+
+<!ELEMENT  etudiant (nom , prenom , Sex , telephones , emails , date , adresses , photo)>
+
+<!ELEMENT nom (#PCDATA) >
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT Sex  EMPTY >
+<!ELEMENT telephones (tele*) >
+<!ELEMENT tele (#PCDATA)>
+<!ELEMENT emails (email*)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT date (jour , mois , annee)>
+<!ELEMENT jour (#PCDATA)>
+<!ELEMENT mois (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+<!ELEMENT adresses (adresse+)>
+<!ELEMENT adresse (rue , numero , ville)>
+<!ELEMENT rue (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT photo EMPTY>
+
+
+<!ATTLIST etudiant N_insc CDATA #REQUIRED>
+<!ATTLIST tele type (GSM|FIXE) "GSM">
+<!ATTLIST email type (personnel|academique) "personnel">
+<!ATTLIST photo source CDATA #REQUIRED>
+<!ATTLIST photo format (jpg|png) "png">
+<!ATTLIST Sex gender (homme|femme) "homme">
