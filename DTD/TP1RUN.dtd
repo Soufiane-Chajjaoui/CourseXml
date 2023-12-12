@@ -9,7 +9,6 @@
 <!ELEMENT Long (#PCDATA)>
 <!ELEMENT Logo EMPTY>
 <!ATTLIST climat type (tempere|humide|chaud|sec) "sec">
-<!ATTLIST Vile type (capitale|Chef_lieu|imitrophe)>
-<!ATTLIST Vile code ID #REQUIRED>
-<!ATTLIST Logo source CDATA #REQUIRED>
+<!ATTLIST Vile code ID #REQUIRED type (capitale|Chef_lieu|imitrophe)>
+ <!ATTLIST Logo source CDATA #REQUIRED>
 <!ATTLIST Logo format #FIXED "png">

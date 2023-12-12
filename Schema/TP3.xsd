@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EST">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="enseignant" type="Type_Enseignant" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Type_Enseignant">
+    <xs:sequence>
+      <xs:element name="emails" type="Type_email" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="CIN" type="xs:string" use="required"/>
+    <xs:attribute name="nom" type="xs:string" use="required"/>
+    <xs:attribute name="prenom" type="xs:string" use="required"/>
+    <xs:attribute name="sexe" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Homme"/>
+          <xs:enumeration value="Femme"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+  <xs:complexType name="Type_email">
+    <xs:sequence>
+      <xs:element name="emailAddress" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="typeMail">
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="Academique"/>
+          <xs:enumeration value="Personnel"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:complexType>
+</xs:schema>

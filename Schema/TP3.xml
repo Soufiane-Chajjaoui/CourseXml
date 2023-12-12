@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EST xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="TP3.xsd">
+  <enseignant CIN="123456" nom="Doe" prenom="John" sexe="Homme">
+    <emails>
+      <emailAddress typeMail="Academique">john.doe@university.com</emailAddress>
+      <emailAddress typeMail="Personnel">john.doe@gmail.com</emailAddress>
+    </emails>
+  </enseignant>
+  <enseignant CIN="654321" nom="Smith" prenom="Jane" sexe="Femme">
+    <emails>
+      <emailAddress typeMail="Academique">jane.smith@university.com</emailAddress>
+    </emails>
+  </enseignant>
+</EST>

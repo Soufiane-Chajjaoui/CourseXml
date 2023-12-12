@@ -13,10 +13,9 @@
   <!ELEMENT Logo EMPTY>
   <!ATTLIST climat type (tempere|humide|chaud|sec) "sec">
   <!ATTLIST Vile code ID #REQUIRED>
-  <!ATTLIST Logo source CDATA #REQUIRED>
-  <!ATTLIST Logo format (jpg | png) "png">
-    <!ATTLIST Vile Limit  IDREFS #REQUIRED>
-    <!ATTLIST pays capitale IDREF #REQUIRED>
+  <!ATTLIST Logo source CDATA #REQUIRED  format (jpg | png) "png">
+  <!ATTLIST Vile Limit  IDREFS #REQUIRED>
+   <!ATTLIST pays capitale IDREF #REQUIRED>
 ]>
 <pays capitale="ID001">
 <region>
