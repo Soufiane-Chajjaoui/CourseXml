@@ -9,7 +9,7 @@
   </xs:element>
   <xs:complexType name="Type_Enseignant">
     <xs:sequence>
-      <xs:element name="emails" type="Type_email" maxOccurs="unbounded"/>
+      <xs:element name="emails" type="Type_email" minOccurs="1" maxOccurs="unbounded"/>
     </xs:sequence>
     <xs:attribute name="CIN" type="xs:string" use="required"/>
     <xs:attribute name="nom" type="xs:string" use="required"/>
@@ -23,10 +23,15 @@
       </xs:simpleType>
     </xs:attribute>
   </xs:complexType>
+  
   <xs:complexType name="Type_email">
     <xs:sequence>
-      <xs:element name="emailAddress" type="xs:string"/>
+      
+      <xs:element name="emailAddress" type="xs:string" minOccurs="1" maxOccurs="unbounded">
+      </xs:element>
+      
     </xs:sequence>
+    
     <xs:attribute name="typeMail">
       <xs:simpleType>
         <xs:restriction base="xs:string">
@@ -35,5 +40,6 @@
         </xs:restriction>
       </xs:simpleType>
     </xs:attribute>
+    
   </xs:complexType>
 </xs:schema>
